@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="title">
+        <h1>Wiseaty</h1>
+    </section>
+    <section id="content">
+        <div id="block-content">
+            <h3>Bonjour {{ user }} !</h3>
+            <p>Merci d'avoir rejoint Wiseaty ! Avant de pouvoir commencer, nous devons verifier votre adresse e-mail.</p>
+            <a style="color:#ffffff;" href="{{ absolute_url(path('user_activation', {'token' : token})) }}">JE CONFIRME MON ADRESSE E-MAIL</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+gesdinet_jwt_refresh_token:
+    # durée de validité refresh token environ 1 mois
+    ttl: 2592000
+    # Change dès qu'il est utilisé
+    ttl_update: true
+    token_parameter_name: refresh_token
